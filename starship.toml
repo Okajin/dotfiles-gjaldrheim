@@ -1,0 +1,75 @@
+# Thème Gjaldrheim - style modulaire nain + Catppuccin Latte 🔨⛰️
+
+
+format = """
+$os$username$directory$git_branch$git_status$nodejs$rust$cmd_duration$jobs$character
+"""
+
+# Symboles & Couleurs inspirés de la bannière
+palette = "gjaldrheim"
+
+# ⛓️ Modules de base
+[os]
+format = "[🌌 ]($style)"
+style = "fg:sky"
+
+[username]
+style_user = "bold gold"
+show_always = true
+format = "[$user]($style) "
+
+[directory]
+style = "fg:subtext1"
+format = "[⛰️ $path]($style) "
+
+[character]
+success_symbol = "[🪓](bold green)"
+error_symbol = "[💥](bold red)"
+vimcmd_symbol = "[🛡️](bold blue)"
+
+
+# 🛠️ Git
+[git_branch]
+symbol = ""
+style = "bold sapphire"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "fg:peach"
+format = "[$all_status$ahead_behind]($style)"
+
+# ⚙️ Langages
+[nodejs]
+symbol = ""
+format = "[ $symbol($version) ](fg:green)"
+
+[rust]
+symbol = "🦀"
+format = "[ $symbol($version) ](fg:maroon)"
+
+# ⏱️ Durée des commandes
+[cmd_duration]
+min_time = 500
+format = "[⏱️ $duration]($style)"
+style = "fg:overlay1"
+
+# 🧱 Jobs en arrière-plan
+[jobs]
+symbol = "✦"
+style = "fg:yellow"
+number_threshold = 1
+format = "[ $symbol $number ]($style)"
+
+
+# 🎨 Palette Gjaldrheim (base Catppuccin Latte)
+
+[palettes.gjaldrheim]
+base = "#eff1f5"
+text = "#4c4f69"
+gold = "#d1a24c"
+sky = "#179299"
+sapphire = "#209fb5"
+peach = "#fe640b"
+maroon = "#e64553"
+overlay1 = "#9ca0b0"
+subtext1 = "#5c5f77"

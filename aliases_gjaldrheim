@@ -1,0 +1,30 @@
+# ~/.aliases_gjaldrheim
+# 📜 Runes pratiques des Gardiens de Gjaldrheim
+
+# 🔨 Aller à la Forge (projets persos)
+alias forge='cd /mnt/c/Projects/perso'
+
+# Création d'un nouveau patron de forge
+alias init-gitperso='~/.scripts/forge-git-perso.sh'
+
+# 📜 Script de commit stylisé
+alias runeforge='~/.scripts/commit-runique.sh'
+
+# ✍️ Modifier le script de forge runique
+alias edit-runeforge='nano ~/.scripts/commit-runique.sh'
+
+# 🧱 Ouvrir le projet actuel dans l’Enclume magique (VS Code)
+alias enclume='code --profile "Gjaldrheim" .'
+
+# 🧭 Retour au sanctuaire personnel
+alias durhalla='cd ~'
+
+# ⚙️  Modifier les runes (alias)
+alias edit-runes='code --profile "Gjaldrheim" ~/.aliases_gjaldrheim'
+
+# 🔄 Recharger la Forge sans redémarrer
+alias reload-forge='source ~/.zshrc'
+
+# 🧾 Affiche le profil Git actif (local si dans un dépôt)
+alias git-profile='echo "📛 Nom     : $(git config user.name)"; echo "📫 Email   : $(git config user.email)"; echo "🌍 Remote  : $(git remote -v | grep origin || echo Aucun)"'
+
