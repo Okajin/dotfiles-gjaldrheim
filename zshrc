@@ -13,6 +13,7 @@ eval "$(starship init zsh)"
 export LANG=en_US.UTF-8
 
 # 🪓 Alias de la Forge d'Anvilskar
-if [ -f ~/.aliases_gjaldrheim ]; then
-  source ~/.aliases_gjaldrheim
+if [ -f "$HOME/dotfiles-gjaldrheim/aliases_gjaldrheim" ]; then
+  source "$HOME/dotfiles-gjaldrheim/aliases_gjaldrheim"
 fi
+
