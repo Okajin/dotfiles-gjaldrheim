@@ -1,0 +1,1 @@
+/home/florient/dotfiles-gjaldrheim/zshrc
